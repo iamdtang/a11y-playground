@@ -1,7 +1,48 @@
 {{page-title "A11y"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <LinkTo @route="buttons-out-of-anchors-part-1" class="nav-link">
+          Buttons Using Anchors 1
+        </LinkTo>
+        <LinkTo @route="buttons-out-of-anchors-part-2" class="nav-link">
+          Buttons Using Anchors 2
+        </LinkTo>
+        <LinkTo @route="css-outlines" class="nav-link">
+          CSS Outlines
+        </LinkTo>
+        <LinkTo @route="valid-alt-text" class="nav-link">
+          Valid alt Text on Images
+        </LinkTo>
+        <LinkTo @route="invalid-interactive" class="nav-link">
+          Invalid interactive elements
+        </LinkTo>
+        <LinkTo @route="invalid-link-text" class="nav-link">
+          Invalid Link Text
+        </LinkTo>
+        <LinkTo @route="input-labels" class="nav-link">
+          Input Labels
+        </LinkTo>
+        <LinkTo @route="positive-tabindexes" class="nav-link">
+          Positive tabindexes
+        </LinkTo>
+        <LinkTo @route="landmarks" class="nav-link">
+          Form Landmarks
+        </LinkTo>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="p-4 content">
+  {{outlet}}
+</main>
+<footer class="p-4 bg-light">
+  <small>Building Accessibly Ember Applications - Lunch and Learn</small>
+</footer>
 
-{{outlet}}
+

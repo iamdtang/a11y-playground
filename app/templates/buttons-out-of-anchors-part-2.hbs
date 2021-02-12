@@ -1,0 +1,12 @@
+{{page-title "Making buttons out of anchors - part 2"}}
+
+<a href="https://www.auditboard.com/">AuditBoard</a>
+
+{{!-- can focus but can't activate via space bar --}}
+<a href="#" {{on "click" this.hi}}>
+  Add
+</a>
+
+<button {{on "click" this.hi}}>
+	Save
+</button>

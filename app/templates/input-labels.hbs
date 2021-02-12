@@ -1,0 +1,23 @@
+{{page-title "Require Input Labels"}}
+
+<div>
+  <h2>Rogue input without a label</h2>
+  <input type="text">
+</div>
+<div class="mt-5">
+  <h2>Input wrapped in a label</h2>
+  <label for="name2">
+    Name
+    <input type="text" id="name2">
+  </label>
+</div>
+
+<div class="mt-5">
+  <h2>Standard usage of label and input</h2>
+  <label for="name">Name</label>
+  <input type="text" id="name">
+</div>
+<div class="mt-5">
+  <h2>Label via aria-label</h2>
+  <input type="text" aria-label="Name">
+</div>

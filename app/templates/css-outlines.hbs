@@ -1,0 +1,37 @@
+{{page-title "CSS Outline"}}
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="disable-outline" checked={{this.isOutlineDisabled}} {{on "click" this.setOption}}>
+  <label class="form-check-label" for="flexRadioDefault1">
+    Disable outline
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="border-for-focus" checked={{this.hasBorderForFocusState}} {{on "click" this.setOption}}>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Remove outline but add border for focus state
+  </label>
+</div>
+
+{{#if this.isOutlineDisabled}}
+  <style>
+    * {
+      outline: none;
+    }
+  </style>
+{{/if}}
+
+{{#if this.hasBorderForFocusState}}
+  <style>
+    *:focus {
+      outline: none;
+      border: 5px solid green;
+    }
+  </style>
+{{/if}}
+
+<div class="d-flex flex-column w-25 mt-5">
+  <input type="text">
+  <a href="https://auditboard.com">AuditBoard</a>
+  <button type="button">Save</button>
+</div>

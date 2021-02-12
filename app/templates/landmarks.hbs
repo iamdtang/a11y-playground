@@ -1,0 +1,21 @@
+{{page-title "Landmarks"}}
+
+<form role="search" class="mb-5">
+  <input type="search" aria-label="search text" size="20">
+  <input type="submit" value="Search">
+</form>
+
+<p>VoiceOver doesn't support form landmarks so the following won't show up in the Landmarks section in the rotor</p>
+
+<h2 id="contact">Contact Us</h2>
+<form aria-labelledby="contact">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
+  </div>
+  <input type="submit" value="Send">
+</form>
